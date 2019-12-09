@@ -32,7 +32,7 @@
      <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
              support bookmarking. -->
      <link rel="apple-touch-icon" href="apple-touch-icon.png">
-     <link rel="favicon" href="favicon.ico">
+     <link rel="favicon" href="assets/misc/favicon.png">
 
 </head>
 
@@ -51,19 +51,19 @@
                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                          <li class="nav-item">
-                              <a class="nav-link" href="#">About</a>
+                              <a class="nav-link" href="#intro">About</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Features</a>
+                              <a class="nav-link" href="#features">Features</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Testimonials</a>
+                              <a class="nav-link" href="#testimonials">Testimonials</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Pricing</a>
+                              <a class="nav-link" href="#pricing">Pricing</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Contact</a>
+                              <a class="nav-link" href="#contact">Contact</a>
                          </li>
                     </ul>
                </div>
@@ -72,84 +72,91 @@
 
      <!-- TODO: Create an area to put the explainer video. -->
      <header class="masthead">
-          <div class="masthead-content">
-               <div class="container">
-                    <div class="embed-responsive embed-responsive-16by9">
-                         <iframe class="embed-responsive-item"
-                              src="https://www.youtube.com/embed/L48g1ZWLMdo?autoplay=1&mute=1"
-                              allowfullscreen></iframe>
-                    </div>
-               </div>
-          </div>
           <div class="bg-circle-1 bg-circle"></div>
           <div class="bg-circle-2 bg-circle"></div>
           <div class="bg-circle-3 bg-circle"></div>
           <div class="bg-circle-4 bg-circle"></div>
+          <div class="container">
+               <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                         src="https://www.youtube.com/embed/L48g1ZWLMdo?autoplay=1&mute=1" allowfullscreen></iframe>
+               </div>
+          </div>
      </header>
      <!-- TODO: Create an area to put the long product description. -->
-     <div class="container">
-          <div class="row">
-               <h1 class="header">All the APIs all the Time!
+     <div class="container-fluid">
+          <article id="intro">
+               <h1 class="mt-3">All the APIs all the Time!
                </h1>
-               <article>
-                    <p class="intro">
-                         The API Superstore has partnered with API providers across the Web to bring you easy
-                         access to the hottest third­party services and features. Get started today!
-                    </p>
-                    <img class="cp-man float-right img-fluid" src="assets/misc/computer-guy.jpg" width="357px">
+               <div class="row">
+                    <div class="card col-6 ">
+                         <p class="intro-text">
+                              The API Superstore has partnered with API providers across the Web to bring you easy
+                              access to the hottest third­party services and features. Get started today!
+                         </p>
+                    </div>
+                    <div class="col-6">
+                         <img class="cp-man mx-auto img-fluid" src="assets/misc/computer-guy.png" width="357px" />
+                    </div>
+
+                    <div class="row">
+                         <img class="book btn btn-link rounded-circle" data-toggle="collapse" href="#collapseExample"
+                              role="button" aria-expanded="false" aria-controls="collapseExample"
+                              src="assets/misc/book.svg" width="110px">
+                         </img>
+                         <img class="cash btn btn-link rounded-circle" data-toggle="collapse" href="#collapseExample2"
+                              role="button" aria-expanded="false" aria-controls="collapseExample2"
+                              src="assets/misc/cash.svg" width="110px">
+                         </img>
+                         <img class="cart btn btn-link rounded-circle" data-toggle="collapse" href="#collapseExample3"
+                              role="button" aria-expanded="false" aria-controls="collapseExample3"
+                              src="assets/misc/cart.svg" width="110px">
+                         </img>
+                         <img class="gift btn btn-link rounded-circle" data-toggle="collapse" href="#collapseExample4"
+                              role="button" aria-expanded="false" aria-controls="collapseExample4"
+                              src="assets/misc/gift.svg" width="110px">
+                         </img>
+                    </div>
                     <!--Collapsible buttons-->
-                    <img class="btn btn-light" data-toggle="collapse" href="#collapseExample" role="button"
-                         aria-expanded="false" aria-controls="collapseExample" src="assets/misc/book.svg" width="150px">
-                    </img>
-                    <img class="btn btn-light" data-toggle="collapse" href="#collapseExample2" role="button"
-                         aria-expanded="false" aria-controls="collapseExample2" src="assets/misc/cash.svg"
-                         width="150px">
-                    </img>
+                    <section id="features">
 
-                    <img class="btn btn-light" data-toggle="collapse" href="#collapseExample3" role="button"
-                         aria-expanded="false" aria-controls="collapseExample3" src="assets/misc/cart.svg"
-                         width="150px">
-                    </img>
-
-                    <img class="btn btn-light" data-toggle="collapse" href="#collapseExample4" role="button"
-                         aria-expanded="false" aria-controls="collapseExample4" src="assets/misc/gift.svg"
-                         width="150px">
-                    </img>
-                    <div class="collapse" id="collapseExample">
-                         <div class="card card-body">
-                              Convenient catalog
+                         <div class="collapse" id="collapseExample">
+                              <div class="card card-body">
+                                   Convenient catalog
+                              </div>
                          </div>
-                    </div>
-                    <div class="collapse" id="collapseExample2">
-                         <div class="card card-body">
-                              Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!
+                         <div class="collapse" id="collapseExample2">
+                              <div class="card card-body">
+                                   Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!
+                              </div>
                          </div>
-                    </div>
-                    <div class="collapse" id="collapseExample3">
-                         <div class="card card-body">
-                              Elegant shopping experience
+                         <div class="collapse" id="collapseExample3">
+                              <div class="card card-body">
+                                   Elegant shopping experience
+                              </div>
                          </div>
-                    </div>
-                    <div class="collapse" id="collapseExample4">
-                         <div class="card card-body">
+                         <div class="collapse" id="collapseExample4">
+                              <div class="card card-body">
                                    Links to the best APIs from all over the web
+                              </div>
                          </div>
-                    </div>
-               </article>
-          </div>
+                    </section>
+               </div>
+          </article>
      </div>
 
      <!-- TODO: Create an area to put customer testimonials. -->
-     <div class="container">
+
+
+     <div class="container-fluid" id="testimonials">
+          <h2 class="mt-5">Testimonials</h2>
           <div class="row">
-               <article>
-                    <h2>Testimonials</h2>
+               <article class="mx-auto">
                     <div class="card mb-3 shadow-sm">
                          <p class="card-body">
                               “This is the best website ever!” ­­ C.P. Yu, AmazingSite.com
                          </p>
                     </div>
-
                     <div class="card mb-3 shadow-sm">
                          <p class="card-body">
                               “I have really admired the way the API Superstore team has created a truly divine interface for
@@ -171,18 +178,18 @@
      </div>
 
      <!-- TODO: Pricing information and Call to Action -->
-     <div class="container">
+     <div class="container-fluid" id="pricing">
           <div class="row">
-               <article>
-                    <h2>Try us out!</h2>
+               <h2 class="m-3">Try us out!</h2>
+               <article class="mx-auto">
                     <div class="card-deck mb-3 text-center">
                          <div class="card mb-4 shadow-sm">
                               <div class="card-header">
                                    <h3 class="my-0 font-weight-normal">Free</h3>
                               </div>
                               <div class="card-body">
-                                   <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small>
-                                   </h1>
+                                   <h4 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small>
+                                   </h4>
                                    <ul class="list-unstyled mt-3 mb-4">
                                         <li>Full access to the store</li>
                                         <li>Download any free API</li>
@@ -213,8 +220,8 @@
                                    <h3 class="my-0 font-weight-normal">Enterprise</h3>
                               </div>
                               <div class="card-body">
-                                   <h1 class="card-title pricing-card-title">$25 <small class="text-muted">/ mo</small>
-                                   </h1>
+                                   <h4 class="card-title pricing-card-title">$25 <small class="text-muted">/ mo</small>
+                                   </h4>
                                    <ul class="list-unstyled mt-3 mb-4">
                                         <li>$15 for registered businesses and schools</li>
                                         <li>Everything in Premium</li>
@@ -232,14 +239,18 @@
      <!--Contact Info-->
      <div class="container">
           <div class="row">
-               <img src="assets/misc/screen1.png" width=500px;>
-               <article>
+               <div>
+                    <img class="contacts-pic" src="assets/misc/screen1.png" width=500px; />
+               </div>
+               <div>
                     <h2>Share On</h2>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-pinterest"></a>
-                    <a href="#" class="fa fa-reddit"></a>
+                    <div class="social-icons">
+                         <a href="#" class="fa fa-facebook"></a>
+                         <a href="#" class="fa fa-twitter"></a>
+                         <a href="#" class="fa fa-instagram"></a>
+                         <a href="#" class="fa fa-pinterest"></a>
+                         <a href="#" class="fa fa-reddit"></a>
+                    </div>
                     <h2>Contact</h2>
                     <p>Phone: 206­555­1234
                     </p>
@@ -249,11 +260,10 @@
                     <p>
                          Location: Seattle, Washington, USA
                     </p>
-               </article>
+               </div>
           </div>
      </div>
      </div>
-
      <!-- TODO: Create an area to show company contact info (phone,
              location, etc.) -->
 
