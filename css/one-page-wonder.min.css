@@ -3,7 +3,7 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
- 
+
 body {
     font-family: Lato;
     background-color: #f5fffc !important;
@@ -182,27 +182,20 @@ footer {
 
 /* Buttons */
 .btn-link {
-    margin-left: 25px;
+    margin-top: 12px;
+    margin-left: 20px;
 }
 
 .btn-link:hover {
     background-color: #77c794 !important;
 }
 
-.book {
-    background-color: #bac7cf !important;
-}
-
-.cash {
-    background-color: #bac7cf !important;
-}
-
-.cart {
-    background-color: #bac7cf !important;
-}
-
+.book,
+.cash,
+.cart,
 .gift {
     background-color: #bac7cf !important;
+    width: 110px;
 }
 
 /*Social media icons */
